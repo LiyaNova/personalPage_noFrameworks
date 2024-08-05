@@ -1,0 +1,183 @@
+body {
+    margin: 0px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 70vh 300px 2px 380px 2px 390px 110px;
+    grid-template-columns: repeat(3, 1fr);   
+}
+
+.stack-container {
+    display: grid; 
+    grid-template-rows: 150px 150px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: span 2;
+    padding-right: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: white;
+}
+
+.stack2-container {
+    display: grid; 
+    grid-template-rows: 160px 180px;
+    grid-template-columns: repeat(3, 1fr);  
+    background-color: white;
+    grid-column: span 3; 
+    padding-top: 20px;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    grid-column: span 3;
+    
+}
+
+.app > img {
+    height: 160px;
+    width: 160px;  
+}
+
+.header {
+    background-color: #F6DCAC;
+
+}
+
+.photo {
+    display: flex;
+    align-content: center;
+    justify-content: center; 
+}
+
+.left {
+    justify-content: end; 
+}
+
+.right {
+    justify-content: start; 
+}
+
+.header > img { 
+  height: 70vh;
+  
+}
+
+.text-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-family: "PT Serif", serif;
+    text-align: end;
+    color: #01204E;  
+}
+
+.text-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-family: "PT Serif", serif;
+    color: #01204E  
+}
+
+.mobile {
+    color: #FEAE6F;
+    font-weight: bold;   
+}
+
+.hi {
+    font-weight: bold;
+}
+
+.prof {
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+
+.highlight {
+    font-size: 3.5rem;
+    color: #028391;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.main > img {
+    width: 250px; 
+    height: 250px;  
+}
+
+.tech {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white; 
+}
+
+.tech > img {
+    width: 250px; 
+    height: 250px;  
+}
+
+.about {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    grid-column: span 2;
+    padding-right: 80px;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    color: #01204E;
+    line-height: 1.5;
+    background-color: white;  
+}
+
+.line-2 {
+    background-color: #F6DCAC;
+    grid-column: span 2;
+    margin-right: 80px;
+    grid-column: span 3;
+    margin-left: 80px;
+}
+
+
+
+.bottom-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6DCAC;
+    grid-column: span 3; 
+    gap: 60px;
+   
+}
+
+.contact {
+    text-decoration: none;
+    font-family: "PT Serif", serif;
+    color:  #FEAE6F;
+    font-size: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #F6DCAC;
+    padding-bottom: 10px;
+   
+}
+
+.copyright {
+    margin: 0px;
+    font-family: "PT Serif", serif;
+    font-size: 10px;
+    color: #01204E; 
+    
+}
