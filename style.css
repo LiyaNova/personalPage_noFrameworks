@@ -2,128 +2,81 @@ body {
     margin: 0px;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-rows: 70vh 300px 2px 380px 2px 390px 110px;
-    grid-template-columns: repeat(3, 1fr);   
+.bold {
+    font-weight: bold;
 }
 
-.stack-container {
-    display: grid; 
-    grid-template-rows: 150px 150px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column: span 2;
-    padding-right: 80px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: white;
-}
-
-.stack2-container {
-    display: grid; 
-    grid-template-rows: 160px 180px;
-    grid-template-columns: repeat(3, 1fr);  
-    background-color: white;
-    grid-column: span 3; 
-    padding-top: 20px;
-}
-
-.app {
+.default-display {
     display: flex;
+    align-items: center;
     justify-content: center;
-    grid-column: span 3;
-    
 }
 
-.app > img {
-    height: 160px;
-    width: 160px;  
-}
-
-.header {
-    background-color: #F6DCAC;
-
-}
-
-.photo {
+.photo-display {
     display: flex;
     align-content: center;
     justify-content: center; 
 }
 
-.left {
-    justify-content: end; 
+.main-grid-container {
+    display: grid;
+    grid-template-rows: 70vh 300px 2px 380px 2px 390px 110px;
+    grid-template-columns: repeat(3, 1fr);   
 }
 
-.right {
-    justify-content: start; 
+/* Header */
+
+.header {
+    background-color: #F6DCAC;
 }
 
 .header > img { 
-  height: 70vh;
-  
+    height: 70vh; 
 }
-
+  
 .text-left {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: "PT Serif", serif;
     text-align: end;
     color: #01204E;  
 }
 
-.text-right {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.3rem;
-    font-family: "PT Serif", serif;
-    color: #01204E  
-}
-
-.mobile {
-    color: #FEAE6F;
-    font-weight: bold;   
-}
-
-.hi {
-    font-weight: bold;
-}
-
-.prof {
-    font-weight: bold;
+.prof-size {
     font-size: 2.2rem;
 }
 
-.highlight {
+.name-highlight {
     font-size: 3.5rem;
     color: #028391;
 }
+  
+.text-right {
+    font-size: 1.2rem;
+    font-family: "PT Serif", serif;
+    color: #01204E  
+}
+  
+.text-right-highlight {
+    color: #FEAE6F;   
+}
 
-.main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Main */
+
+.img-title-section {
     background-color: white;
 }
 
-.main > img {
+.img-title-section > img {
     width: 250px; 
     height: 250px;  
 }
 
-.tech {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white; 
-}
-
-.tech > img {
-    width: 250px; 
-    height: 250px;  
+.line {
+    background-color: #F6DCAC;
+    grid-column: span 2;
+    margin-right: 80px;
+    grid-column: span 3;
+    margin-left: 80px;
 }
 
 .about {
@@ -135,49 +88,74 @@ body {
     font-size: 15px;
     font-family: "Roboto", sans-serif;
     color: #01204E;
-    line-height: 1.5;
+    line-height: 1.7;
     background-color: white;  
 }
 
-.line-2 {
-    background-color: #F6DCAC;
+.techstack-container {
+    display: grid; 
+    grid-template-rows: 150px 150px;
+    grid-template-columns: repeat(5, 1fr);
     grid-column: span 2;
-    margin-right: 80px;
-    grid-column: span 3;
-    margin-left: 80px;
+    padding-right: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: white;
 }
 
+.appstack-container {
+    display: grid; 
+    grid-template-rows: 160px 180px;
+    grid-template-columns: repeat(3, 1fr);  
+    background-color: white;
+    grid-column: span 3; 
+    padding-top: 20px;
+}
 
-
-.bottom-container {
+.img-apps-section {
     display: flex;
     justify-content: center;
-    align-items: center;
+    grid-column: span 3;  
+}
+
+.img-apps-section > img {
+    height: 160px;
+    width: 160px;  
+}
+
+.app-left {
+    justify-content: end; 
+}
+
+.app-right {
+    justify-content: start; 
+}
+
+/* Bottom section  */
+
+.bottom-container {
     background-color: #F6DCAC;
     grid-column: span 3; 
-    gap: 60px;
-   
+    gap: 60px;  
 }
 
 .contact {
     text-decoration: none;
     font-family: "PT Serif", serif;
     color:  #FEAE6F;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 footer {
     display: flex;
     justify-content: center;
     background-color: #F6DCAC;
-    padding-bottom: 10px;
-   
+    padding-bottom: 10px;  
 }
 
 .copyright {
     margin: 0px;
     font-family: "PT Serif", serif;
     font-size: 10px;
-    color: #01204E; 
-    
+    color: #01204E;    
 }
